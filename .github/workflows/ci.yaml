@@ -42,11 +42,7 @@ jobs:
     - name: Run golangci-lint
       uses: golangci/golangci-lint-action@v6
       with:
-<<<<<<< HEAD
         version: latest
-=======
-        version: v1.56.2
->>>>>>> cf43361 (Testing)
   
   push:
     runs-on: ubuntu-latest
@@ -95,9 +91,4 @@ jobs:
         git config --global user.name "visheshmishra73"
         git add helm/go-web-app-chart/values.yaml
         git commit -m "Update tag in Helm chart"
-<<<<<<< HEAD
         git push
-=======
-        git push
-
->>>>>>> cf43361 (Testing)
