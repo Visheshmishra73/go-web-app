@@ -1,8 +1,12 @@
+<<<<<<< HEAD
 # Service for the application
+=======
+>>>>>>> cf43361 (Testing)
 apiVersion: v1
 kind: Service
 metadata:
   name: go-web-app
+<<<<<<< HEAD
   labels:
     app: go-web-app
 spec:
@@ -12,4 +16,15 @@ spec:
     protocol: TCP
   selector:
     app: go-web-app
+=======
+  labels: 
+    app: go-web-app
+spec:
+  selector:
+    app: go-web-app
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8080
+>>>>>>> cf43361 (Testing)
   type: NodePort
